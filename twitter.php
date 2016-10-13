@@ -34,7 +34,7 @@ class tweet_API{
 		foreach ($content->statuses as $result) {
 			if($result->retweet_count > 0){
 				//echo $result->user->screen_name;
-				$tweets[]=array("user_name"=>$result->user->screen_name,"text"=>$result->text);
+				$tweets[]=array("user_name"=>$result->user->screen_name,"text"=>$result->text,"retweets"=>$result->retweet_count);
 			}
 		}
 		return $tweets;

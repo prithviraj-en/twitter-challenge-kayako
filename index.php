@@ -41,7 +41,7 @@
 		<div class="container">
 			<?php
 				foreach($tweets as $tweet){
-					echo "<div class=\"container tweet\">"."<h3>".$tweet["text"]."</h3>"."<p>".$tweet["user_name"]."</p>"."</div>";
+					echo "<div class=\"container tweet\">"."<h3>".$tweet["text"]."</h3>"."<p>".$tweet["user_name"]."<br>Retweeted ".$tweet["retweets"]." times</p>"."</div>";
 				}
 			?>			
 		</div>
