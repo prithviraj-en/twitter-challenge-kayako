@@ -1,5 +1,5 @@
 Licensed under GPLv3
-
+Author-Prithviraj Jadhav
 
 Dependencies--
 TwitterOAuth: v0.6.6

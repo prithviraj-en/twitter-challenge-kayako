@@ -31,6 +31,7 @@ class tweet_API{
 		  "result_type" => "popular",
 		  "count" => "100"
 		);
+		
 		$content = $this->connection->get('search/tweets', $query);
 		$tweets=array();
 		foreach ($content->statuses as $result) {
