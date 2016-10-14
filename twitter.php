@@ -4,6 +4,7 @@ require "vendor/autoload.php";
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
+//catch exceptions
 class tweet_API{
 
 	//the oauth connection handler 
@@ -24,6 +25,7 @@ class tweet_API{
 	public function search_by_hashtag($tag="#custserv")
 	{
 		//result_type can be popular, mixed OR recent(default)
+		//add string to 'q' - " since:2016-10-1 until:2016-10-19"
 		$query = array(
 		  "q" => $tag,
 		  "result_type" => "popular",
